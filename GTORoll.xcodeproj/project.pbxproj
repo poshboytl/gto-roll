@@ -14,6 +14,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		56C94A29D74B6E6A80427095 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		5FA8B199CF0AEA304FE03FB8 /* GTORollApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GTORollApp.swift; sourceTree = "<group>"; };
 		61C8C4F9650C7BB85393D959 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		8885F762208EF681A7924308 /* GTORoll Watch App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "GTORoll Watch App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -47,6 +48,7 @@
 				EE80A3BBC6E6DCF67C85CB02 /* Assets.xcassets */,
 				61C8C4F9650C7BB85393D959 /* ContentView.swift */,
 				5FA8B199CF0AEA304FE03FB8 /* GTORollApp.swift */,
+				56C94A29D74B6E6A80427095 /* Info.plist */,
 			);
 			path = "GTORoll Watch App";
 			sourceTree = "<group>";
@@ -312,15 +314,12 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = "";
-				GENERATE_INFOPLIST_FILE = YES;
-				MARKETING_VERSION = 1.0;
+				INFOPLIST_FILE = "GTORoll Watch App/Info.plist";
 				PRODUCT_BUNDLE_IDENTIFIER = com.poshboy.gtoroll.watchkitapp;
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = 4;
-				WK_COMPANION_APP_BUNDLE_IDENTIFIER = com.poshboy.gtoroll;
 			};
 			name = Debug;
 		};
@@ -349,15 +348,12 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = "";
-				GENERATE_INFOPLIST_FILE = YES;
-				MARKETING_VERSION = 1.0;
+				INFOPLIST_FILE = "GTORoll Watch App/Info.plist";
 				PRODUCT_BUNDLE_IDENTIFIER = com.poshboy.gtoroll.watchkitapp;
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = 4;
-				WK_COMPANION_APP_BUNDLE_IDENTIFIER = com.poshboy.gtoroll;
 			};
 			name = Release;
 		};
