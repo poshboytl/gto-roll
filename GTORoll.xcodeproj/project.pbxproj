@@ -3,144 +3,187 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 56;
+	objectVersion = 77;
 	objects = {
 
 /* Begin PBXBuildFile section */
-		A1000001233A0001 /* GTORollApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1000002233A0001 /* GTORollApp.swift */; };
-		A1000003233A0001 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1000004233A0001 /* ContentView.swift */; };
-		A1000005233A0001 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A1000006233A0001 /* Assets.xcassets */; };
+		184BA00227E431341054B46B /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61C8C4F9650C7BB85393D959 /* ContentView.swift */; };
+		4199A9FC4F45C41E3E0AA945 /* GTORollApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FA8B199CF0AEA304FE03FB8 /* GTORollApp.swift */; };
+		6FBF274EA5AA7A8FA1E4CB48 /* GTORollApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFFB900C722B7A60BAA2A73B /* GTORollApp.swift */; };
+		81B74BE3F428830F1CDD6298 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EE80A3BBC6E6DCF67C85CB02 /* Assets.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		A1000002233A0001 /* GTORollApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GTORollApp.swift; sourceTree = "<group>"; };
-		A1000004233A0001 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
-		A1000006233A0001 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		A1000007233A0001 /* GTORoll.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GTORoll.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		5FA8B199CF0AEA304FE03FB8 /* GTORollApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GTORollApp.swift; sourceTree = "<group>"; };
+		61C8C4F9650C7BB85393D959 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		8885F762208EF681A7924308 /* GTORoll Watch App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "GTORoll Watch App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A86250AC853BB559DC27218A /* GTORoll.app */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.application; path = GTORoll.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		DFFB900C722B7A60BAA2A73B /* GTORollApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GTORollApp.swift; sourceTree = "<group>"; };
+		EE80A3BBC6E6DCF67C85CB02 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
-/* Begin PBXFrameworksBuildPhase section */
-		A1000008233A0001 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXFrameworksBuildPhase section */
-
 /* Begin PBXGroup section */
-		A1000009233A0001 = {
+		92AEA2F2B9BE9E05BAE669B9 = {
 			isa = PBXGroup;
 			children = (
-				A100000A233A0001 /* GTORoll Watch App */,
-				A100000B233A0001 /* Products */,
+				D41D01F80A0076606D4A0260 /* GTORoll */,
+				D24D1F3EEF9D7FFC92E29714 /* GTORoll Watch App */,
+				C7F54B4A369CE3A0F53F6A0D /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		A100000A233A0001 /* GTORoll Watch App */ = {
+		C7F54B4A369CE3A0F53F6A0D /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				A1000002233A0001 /* GTORollApp.swift */,
-				A1000004233A0001 /* ContentView.swift */,
-				A1000006233A0001 /* Assets.xcassets */,
+				8885F762208EF681A7924308 /* GTORoll Watch App.app */,
+				A86250AC853BB559DC27218A /* GTORoll.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D24D1F3EEF9D7FFC92E29714 /* GTORoll Watch App */ = {
+			isa = PBXGroup;
+			children = (
+				EE80A3BBC6E6DCF67C85CB02 /* Assets.xcassets */,
+				61C8C4F9650C7BB85393D959 /* ContentView.swift */,
+				5FA8B199CF0AEA304FE03FB8 /* GTORollApp.swift */,
 			);
 			path = "GTORoll Watch App";
 			sourceTree = "<group>";
 		};
-		A100000B233A0001 /* Products */ = {
+		D41D01F80A0076606D4A0260 /* GTORoll */ = {
 			isa = PBXGroup;
 			children = (
-				A1000007233A0001 /* GTORoll.app */,
+				DFFB900C722B7A60BAA2A73B /* GTORollApp.swift */,
 			);
-			name = Products;
+			path = GTORoll;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		A100000C233A0001 /* GTORoll Watch App */ = {
+		7F7809E4AA5CAD248DD4C511 /* GTORoll */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = A100000D233A0001 /* Build configuration list for PBXNativeTarget "GTORoll Watch App" */;
+			buildConfigurationList = E26428EDFFBF036943FF28CC /* Build configuration list for PBXNativeTarget "GTORoll" */;
 			buildPhases = (
-				A100000E233A0001 /* Sources */,
-				A1000008233A0001 /* Frameworks */,
-				A100000F233A0001 /* Resources */,
+				8877F3A92A5C28E3BF9A3B25 /* Sources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = GTORoll;
+			packageProductDependencies = (
+			);
+			productName = GTORoll;
+			productReference = A86250AC853BB559DC27218A /* GTORoll.app */;
+			productType = "com.apple.product-type.application";
+		};
+		E0216A3610DB04B2E238D8E6 /* GTORoll Watch App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EB28EFB42F76977894579FE5 /* Build configuration list for PBXNativeTarget "GTORoll Watch App" */;
+			buildPhases = (
+				CDA146411CDB5FF843A0CD65 /* Sources */,
+				57ED1E68AA13F25558950FC5 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
 			name = "GTORoll Watch App";
+			packageProductDependencies = (
+			);
 			productName = "GTORoll Watch App";
-			productReference = A1000007233A0001 /* GTORoll.app */;
+			productReference = 8885F762208EF681A7924308 /* GTORoll Watch App.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		A1000010233A0001 /* Project object */ = {
+		41463ABBC524C1315A1B8A20 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				BuildIndependentTargetsInParallel = 1;
-				LastSwiftUpdateCheck = 1500;
-				LastUpgradeCheck = 1500;
-				TargetAttributes = {
-					A100000C233A0001 = {
-						CreatedOnToolsVersion = 15.0;
-					};
-				};
+				BuildIndependentTargetsInParallel = YES;
+				LastUpgradeCheck = 1430;
 			};
-			buildConfigurationList = A1000011233A0001 /* Build configuration list for PBXProject "GTORoll" */;
+			buildConfigurationList = E1708D82AE7924B912485944 /* Build configuration list for PBXProject "GTORoll" */;
 			compatibilityVersion = "Xcode 14.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
-				en,
 				Base,
+				en,
 			);
-			mainGroup = A1000009233A0001;
-			productRefGroup = A100000B233A0001 /* Products */;
+			mainGroup = 92AEA2F2B9BE9E05BAE669B9;
+			minimizedProjectReferenceProxies = 1;
+			preferredProjectObjectVersion = 77;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				A100000C233A0001 /* GTORoll Watch App */,
+				7F7809E4AA5CAD248DD4C511 /* GTORoll */,
+				E0216A3610DB04B2E238D8E6 /* GTORoll Watch App */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		A100000F233A0001 /* Resources */ = {
+		57ED1E68AA13F25558950FC5 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A1000005233A0001 /* Assets.xcassets in Resources */,
+				81B74BE3F428830F1CDD6298 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		A100000E233A0001 /* Sources */ = {
+		8877F3A92A5C28E3BF9A3B25 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A1000001233A0001 /* GTORollApp.swift in Sources */,
-				A1000003233A0001 /* ContentView.swift in Sources */,
+				6FBF274EA5AA7A8FA1E4CB48 /* GTORollApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CDA146411CDB5FF843A0CD65 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				184BA00227E431341054B46B /* ContentView.swift in Sources */,
+				4199A9FC4F45C41E3E0AA945 /* GTORollApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin XCBuildConfiguration section */
-		A1000012233A0001 /* Debug */ = {
+		01A029AA3EC292187A5E6C2A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				INFOPLIST_GENERATION_MODE = GeneratedFile;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.poshboy.gtoroll;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		2A4AF57D44B7FBD6D6208E54 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
 				CLANG_ENABLE_OBJC_WEAK = YES;
@@ -170,14 +213,13 @@
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
-				ENABLE_USER_SCRIPT_SANDBOXING = YES;
-				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_PREPROCESSOR_DEFINITIONS = (
-					"DEBUG=1",
 					"$(inherited)",
+					"DEBUG=1",
 				);
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
@@ -185,23 +227,26 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				WATCHOS_DEPLOYMENT_TARGET = 10.0;
 			};
 			name = Debug;
 		};
-		A1000013233A0001 /* Release */ = {
+		34C4867E28F1EEA644FEB840 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
 				CLANG_ENABLE_OBJC_WEAK = YES;
@@ -231,8 +276,7 @@
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				ENABLE_USER_SCRIPT_SANDBOXING = YES;
-				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
@@ -240,95 +284,96 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+				WATCHOS_DEPLOYMENT_TARGET = 10.0;
 			};
 			name = Release;
 		};
-		A1000014233A0001 /* Debug */ = {
+		5E4705E1E7B921B6B780D445 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = "";
-				ENABLE_PREVIEWS = YES;
-				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_KEY_CFBundleDisplayName = GTORoll;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
-				INFOPLIST_KEY_WKCompanionAppBundleIdentifier = "";
-				INFOPLIST_KEY_WKRunsIndependentlyOfCompanionApp = YES;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
+				INFOPLIST_GENERATION_MODE = GeneratedFile;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.poshboy.gtoroll.watchkitapp;
-				PRODUCT_NAME = GTORoll;
 				SDKROOT = watchos;
-				SKIP_INSTALL = NO;
-				SWIFT_EMIT_LOC_STRINGS = YES;
-				SWIFT_VERSION = 5.0;
+				SKIP_INSTALL = YES;
+				SUPPORTS_WATCH_APP_RUNNING_WITHOUT_IOS_APP = YES;
 				TARGETED_DEVICE_FAMILY = 4;
-				WATCHOS_DEPLOYMENT_TARGET = 10.0;
 			};
 			name = Debug;
 		};
-		A1000015233A0001 /* Release */ = {
+		A3545FB2070AF97B68057367 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = "";
-				ENABLE_PREVIEWS = YES;
-				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_KEY_CFBundleDisplayName = GTORoll;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
-				INFOPLIST_KEY_WKCompanionAppBundleIdentifier = "";
-				INFOPLIST_KEY_WKRunsIndependentlyOfCompanionApp = YES;
+				INFOPLIST_GENERATION_MODE = GeneratedFile;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.poshboy.gtoroll;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		DDEBC27D1C93D39893C3BE9D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CURRENT_PROJECT_VERSION = 1;
+				INFOPLIST_GENERATION_MODE = GeneratedFile;
+				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.poshboy.gtoroll.watchkitapp;
-				PRODUCT_NAME = GTORoll;
 				SDKROOT = watchos;
-				SKIP_INSTALL = NO;
-				SWIFT_EMIT_LOC_STRINGS = YES;
-				SWIFT_VERSION = 5.0;
+				SKIP_INSTALL = YES;
+				SUPPORTS_WATCH_APP_RUNNING_WITHOUT_IOS_APP = YES;
 				TARGETED_DEVICE_FAMILY = 4;
-				WATCHOS_DEPLOYMENT_TARGET = 10.0;
 			};
 			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		A100000D233A0001 /* Build configuration list for PBXNativeTarget "GTORoll Watch App" */ = {
+		E1708D82AE7924B912485944 /* Build configuration list for PBXProject "GTORoll" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				A1000014233A0001 /* Debug */,
-				A1000015233A0001 /* Release */,
+				2A4AF57D44B7FBD6D6208E54 /* Debug */,
+				34C4867E28F1EEA644FEB840 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
+			defaultConfigurationName = Debug;
 		};
-		A1000011233A0001 /* Build configuration list for PBXProject "GTORoll" */ = {
+		E26428EDFFBF036943FF28CC /* Build configuration list for PBXNativeTarget "GTORoll" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				A1000012233A0001 /* Debug */,
-				A1000013233A0001 /* Release */,
+				A3545FB2070AF97B68057367 /* Debug */,
+				01A029AA3EC292187A5E6C2A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
+			defaultConfigurationName = Debug;
+		};
+		EB28EFB42F76977894579FE5 /* Build configuration list for PBXNativeTarget "GTORoll Watch App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5E4705E1E7B921B6B780D445 /* Debug */,
+				DDEBC27D1C93D39893C3BE9D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = A1000010233A0001 /* Project object */;
+	rootObject = 41463ABBC524C1315A1B8A20 /* Project object */;
 }
