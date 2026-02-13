@@ -33,4 +33,4 @@ targets:
       CURRENT_PROJECT_VERSION: "1"
       CODE_SIGN_STYLE: Automatic
       DEVELOPMENT_TEAM: ""
-      WK_WEB_VIEW_ENABLED: NO
+      WK_COMPANION_APP_BUNDLE_IDENTIFIER: com.poshboy.gtoroll
