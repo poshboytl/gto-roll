@@ -1,9 +1,6 @@
 import SwiftUI
 
 struct ContentView: View {
-    // Current time
-    @State private var currentTime = Date()
-    
     // Timer state
     @State private var isTimerRunning = false
     @State private var elapsedTime: TimeInterval = 0
@@ -12,38 +9,30 @@ struct ContentView: View {
     // Random number (0-99)
     @State private var randomNumber = Int.random(in: 0...99)
     
-    // Timers
-    @State private var clockTimer: Timer?
-    @State private var rngTimer: Timer?
+    // Timer
+    @State private var updateTimer: Timer?
     
     var body: some View {
-        VStack(spacing: 8) {
-            // Row 1: Current Time
-            Text(timeString(from: currentTime))
-                .font(.system(size: 24, weight: .light, design: .monospaced))
-                .foregroundColor(.white)
-            
-            // Row 2: Stopwatch Timer
+        VStack(spacing: 12) {
+            // Row 1: Stopwatch Timer (MMM:SS format, supports up to 999 minutes)
             Text(timerString(from: elapsedTime))
-                .font(.system(size: 28, weight: .medium, design: .monospaced))
+                .font(.system(size: 36, weight: .medium, design: .monospaced))
                 .foregroundColor(isTimerRunning ? .green : .yellow)
             
-            // Row 3: Random Number
+            // Row 2: Random Number
             Text(String(format: "%02d", randomNumber))
-                .font(.system(size: 64, weight: .bold, design: .monospaced))
+                .font(.system(size: 72, weight: .bold, design: .monospaced))
                 .foregroundColor(.cyan)
         }
         .frame(maxWidth: .infinity, maxHeight: .infinity)
         .background(Color.black)
         .onAppear {
-            startClockAndRNG()
+            startUpdateTimer()
         }
         .onDisappear {
-            stopAllTimers()
+            stopTimer()
         }
-        // Digital Crown press to start/stop timer
         .focusable(true)
-        .digitalCrownRotation($elapsedTime, from: 0, through: 0, sensitivity: .low, isContinuous: false, isHapticFeedbackEnabled: false)
         .onTapGesture {
             toggleTimer()
         }
@@ -51,25 +40,19 @@ struct ContentView: View {
     
     // MARK: - Time Formatting
     
-    private func timeString(from date: Date) -> String {
-        let formatter = DateFormatter()
-        formatter.dateFormat = "HH:mm:ss"
-        return formatter.string(from: date)
-    }
-    
     private func timerString(from interval: TimeInterval) -> String {
-        let minutes = Int(interval) / 60
-        let seconds = Int(interval) % 60
-        let tenths = Int((interval.truncatingRemainder(dividingBy: 1)) * 10)
-        return String(format: "%02d:%02d.%d", minutes, seconds, tenths)
+        let totalSeconds = Int(interval)
+        let minutes = totalSeconds / 60
+        let seconds = totalSeconds % 60
+        // Support up to 999 minutes
+        return String(format: "%03d:%02d", min(minutes, 999), seconds)
     }
     
     // MARK: - Timer Controls
     
-    private func startClockAndRNG() {
-        // Update clock every second
-        clockTimer = Timer.scheduledTimer(withTimeInterval: 1.0, repeats: true) { _ in
-            currentTime = Date()
+    private func startUpdateTimer() {
+        updateTimer = Timer.scheduledTimer(withTimeInterval: 1.0, repeats: true) { _ in
+            // Update random number every second
             randomNumber = Int.random(in: 0...99)
             
             // Update elapsed time if timer is running
@@ -79,9 +62,8 @@ struct ContentView: View {
         }
     }
     
-    private func stopAllTimers() {
-        clockTimer?.invalidate()
-        rngTimer?.invalidate()
+    private func stopTimer() {
+        updateTimer?.invalidate()
     }
     
     private func toggleTimer() {
@@ -93,7 +75,7 @@ struct ContentView: View {
             }
             timerStartDate = nil
         } else {
-            // Start timer (reset if was stopped)
+            // Start timer
             if elapsedTime > 0 {
                 // Resume from where we left off
                 timerStartDate = Date().addingTimeInterval(-elapsedTime)
