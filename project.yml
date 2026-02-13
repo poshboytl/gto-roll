@@ -14,9 +14,11 @@ targets:
         createIntermediateGroups: true
     settings:
       PRODUCT_BUNDLE_IDENTIFIER: com.poshboy.gtoroll
-      INFOPLIST_GENERATION_MODE: GeneratedFile
+      GENERATE_INFOPLIST_FILE: YES
       MARKETING_VERSION: "1.0"
       CURRENT_PROJECT_VERSION: "1"
+      CODE_SIGN_STYLE: Automatic
+      DEVELOPMENT_TEAM: ""
       
   GTORoll Watch App:
     type: application
@@ -26,7 +28,9 @@ targets:
         createIntermediateGroups: true
     settings:
       PRODUCT_BUNDLE_IDENTIFIER: com.poshboy.gtoroll.watchkitapp
-      INFOPLIST_GENERATION_MODE: GeneratedFile
+      GENERATE_INFOPLIST_FILE: YES
       MARKETING_VERSION: "1.0"
       CURRENT_PROJECT_VERSION: "1"
-      SUPPORTS_WATCH_APP_RUNNING_WITHOUT_IOS_APP: YES
+      CODE_SIGN_STYLE: Automatic
+      DEVELOPMENT_TEAM: ""
+      WK_WEB_VIEW_ENABLED: NO
