@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 77;
+	objectVersion = 63;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -115,7 +115,6 @@
 						ProvisioningStyle = Automatic;
 					};
 					E0216A3610DB04B2E238D8E6 = {
-						DevelopmentTeam = "";
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -130,7 +129,6 @@
 			);
 			mainGroup = 92AEA2F2B9BE9E05BAE669B9;
 			minimizedProjectReferenceProxies = 1;
-			preferredProjectObjectVersion = 77;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
@@ -314,7 +312,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = 5NJ9Z586TK;
 				INFOPLIST_FILE = "GTORoll Watch App/Info.plist";
 				PRODUCT_BUNDLE_IDENTIFIER = com.poshboy.gtoroll.watchkitapp;
 				SDKROOT = watchos;
@@ -346,7 +344,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = 5NJ9Z586TK;
 				INFOPLIST_FILE = "GTORoll Watch App/Info.plist";
 				PRODUCT_BUNDLE_IDENTIFIER = com.poshboy.gtoroll.watchkitapp;
 				SDKROOT = watchos;
